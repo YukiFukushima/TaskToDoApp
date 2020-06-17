@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskAddViewController" customModule="TaskToDoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="titleTextField" destination="4xS-4k-qoS" id="Rqb-dq-Tq1"/>
+                <outlet property="todoTextField" destination="hyT-Hc-POe" id="eEi-bE-vP4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="タイトル" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4xS-4k-qoS">
+                    <rect key="frame" x="20" y="87" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ToDo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyT-Hc-POe">
+                    <rect key="frame" x="20" y="143" width="374" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="lH2-Gn-jn7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4xS-4k-qoS" secondAttribute="trailing" constant="20" id="7f3-SE-fVn"/>
+                <constraint firstItem="4xS-4k-qoS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7vI-ex-39D"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hyT-Hc-POe" secondAttribute="trailing" constant="20" id="8rC-1A-keB"/>
+                <constraint firstItem="4xS-4k-qoS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AkM-b2-RCU"/>
+                <constraint firstItem="hyT-Hc-POe" firstAttribute="top" secondItem="4xS-4k-qoS" secondAttribute="bottom" constant="22" id="PTc-dS-S5f"/>
+                <constraint firstItem="hyT-Hc-POe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Z8T-XF-fDH"/>
+                <constraint firstItem="4xS-4k-qoS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="43" id="lFz-Qf-ujn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+        </view>
+    </objects>
+</document>
